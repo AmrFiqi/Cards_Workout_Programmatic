@@ -24,6 +24,7 @@ class CWButton: UIButton {
         super.init(frame: .zero)
         self.backgroundColor = backgrounfColor
         setTitle(title, for: .normal)
+        configure()
     }
     
     // MARK: - Functions
