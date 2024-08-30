@@ -12,6 +12,7 @@
 		E526628B2C80FFEE00D7B126 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E526628A2C80FFEE00D7B126 /* Assets.xcassets */; };
 		E526628E2C80FFEE00D7B126 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E526628D2C80FFEE00D7B126 /* Base */; };
 		E52662962C81A6FA00D7B126 /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52662952C81A6FA00D7B126 /* CardSelectionVC.swift */; };
+		E58D0EFF2C81A88800A3C96F /* CWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D0EFE2C81A88800A3C96F /* CWButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E526628D2C80FFEE00D7B126 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E526628F2C80FFEE00D7B126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E52662952C81A6FA00D7B126 /* CardSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionVC.swift; sourceTree = "<group>"; };
+		E58D0EFE2C81A88800A3C96F /* CWButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				E52662812C80FFED00D7B126 /* AppDelegate.swift */,
 				E52662832C80FFED00D7B126 /* SceneDelegate.swift */,
 				E52662952C81A6FA00D7B126 /* CardSelectionVC.swift */,
+				E58D0EFE2C81A88800A3C96F /* CWButton.swift */,
 				E526628A2C80FFEE00D7B126 /* Assets.xcassets */,
 				E526628C2C80FFEE00D7B126 /* LaunchScreen.storyboard */,
 				E526628F2C80FFEE00D7B126 /* Info.plist */,
@@ -137,6 +140,7 @@
 				E52662822C80FFED00D7B126 /* AppDelegate.swift in Sources */,
 				E52662842C80FFED00D7B126 /* SceneDelegate.swift in Sources */,
 				E52662962C81A6FA00D7B126 /* CardSelectionVC.swift in Sources */,
+				E58D0EFF2C81A88800A3C96F /* CWButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
