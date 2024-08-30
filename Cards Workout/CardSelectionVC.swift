@@ -13,8 +13,13 @@ class CardSelectionVC: UIViewController {
     
     let cardImageView = UIImageView()
     let stopButton = CWButton(backgrounfColor: .systemRed, title: "Stop!")
-    let restartButton = CWButton(backgrounfColor: .systemGreen, title: "Restart")
+    let restartButton = CWButton(backgrounfColor: .systemGreen, title: "Start")
     let rulesButton = CWButton(backgrounfColor: .systemBlue, title: "Rules")
+    
+    // MARK: - Variables
+    
+    var timer: Timer!
+    var cards: [UIImage] = Card.allValues
 
     // MARK: - VC Lifecycle
     
@@ -22,6 +27,12 @@ class CardSelectionVC: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         configureUI()
+        startTimer()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        timer.invalidate()
     }
     
     // MARK: - UI Configuration Functions
@@ -48,6 +59,7 @@ class CardSelectionVC: UIViewController {
     
     func configureStopButton() {
         view.addSubview(stopButton)
+        stopButton.addTarget(self, action: #selector(stopButtonTapped), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             stopButton.widthAnchor.constraint(equalToConstant: 260),
@@ -60,6 +72,7 @@ class CardSelectionVC: UIViewController {
     
     func configureRestartButton() {
         view.addSubview(restartButton)
+        restartButton.addTarget(self, action: #selector(restartButtonTapped), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             restartButton.widthAnchor.constraint(equalToConstant: 115),
@@ -83,8 +96,27 @@ class CardSelectionVC: UIViewController {
         ])
     }
     
+    // MARK: - Class Functions
+    
     @objc func presentRulesVC() {
         present(RulesVC(), animated: true)
+    }
+    
+    @objc func stopButtonTapped() {
+        timer.invalidate()
+    }
+    
+    @objc func restartButtonTapped() {
+        timer.invalidate()
+        startTimer()
+    }
+    
+    func startTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(showRandomImage), userInfo: nil, repeats: true)
+    }
+    
+    @objc func showRandomImage() {
+        cardImageView.image = cards.randomElement() ?? UIImage(named: "AS")
     }
     
 }

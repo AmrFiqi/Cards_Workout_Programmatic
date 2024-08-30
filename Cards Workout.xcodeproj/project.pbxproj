@@ -14,6 +14,7 @@
 		E52662962C81A6FA00D7B126 /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52662952C81A6FA00D7B126 /* CardSelectionVC.swift */; };
 		E568DCE22C81D29E00767730 /* RulesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568DCE12C81D29E00767730 /* RulesVC.swift */; };
 		E58D0EFF2C81A88800A3C96F /* CWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D0EFE2C81A88800A3C96F /* CWButton.swift */; };
+		E5CBAC5E2C826D44006C3B4E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CBAC5D2C826D44006C3B4E /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E52662952C81A6FA00D7B126 /* CardSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionVC.swift; sourceTree = "<group>"; };
 		E568DCE12C81D29E00767730 /* RulesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesVC.swift; sourceTree = "<group>"; };
 		E58D0EFE2C81A88800A3C96F /* CWButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWButton.swift; sourceTree = "<group>"; };
+		E5CBAC5D2C826D44006C3B4E /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				E526628C2C80FFEE00D7B126 /* LaunchScreen.storyboard */,
 				E526628F2C80FFEE00D7B126 /* Info.plist */,
 				E568DCE12C81D29E00767730 /* RulesVC.swift */,
+				E5CBAC5D2C826D44006C3B4E /* Card.swift */,
 			);
 			path = "Cards Workout";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E52662822C80FFED00D7B126 /* AppDelegate.swift in Sources */,
+				E5CBAC5E2C826D44006C3B4E /* Card.swift in Sources */,
 				E568DCE22C81D29E00767730 /* RulesVC.swift in Sources */,
 				E52662842C80FFED00D7B126 /* SceneDelegate.swift in Sources */,
 				E52662962C81A6FA00D7B126 /* CardSelectionVC.swift in Sources */,
