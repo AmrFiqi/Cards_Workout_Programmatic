@@ -12,9 +12,9 @@ class CardSelectionVC: UIViewController {
     // MARK: - UI Elements
     
     let cardImageView = UIImageView()
-    let stopButton = CWButton(backgrounfColor: .systemRed, title: "Stop!")
-    let restartButton = CWButton(backgrounfColor: .systemGreen, title: "Start")
-    let rulesButton = CWButton(backgrounfColor: .systemBlue, title: "Rules")
+    let stopButton = CWButton(color: .systemRed, title: "Stop!", imageName: "stop.circle")
+    let restartButton = CWButton(color: .systemGreen, title: "Start",imageName: "arrow.clockwise")
+    let rulesButton = CWButton(color: .systemBlue, title: "Rules", imageName: "info.circle")
     
     // MARK: - Variables
     
